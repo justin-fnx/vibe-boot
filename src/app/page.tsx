@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AdSense from "@/components/ads/AdSense";
 
 export default function Home() {
   return (
@@ -24,6 +25,18 @@ export default function Home() {
               </a>
             </div>
           </div>
+        </div>
+      </div>
+      
+      {/* 광고 섹션 */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <div className="flex justify-center">
+          <AdSense
+            slot="YOUR_AD_SLOT_ID"
+            style={{ display: 'block' }}
+            format="auto"
+            responsive={true}
+          />
         </div>
       </div>
     </div>
