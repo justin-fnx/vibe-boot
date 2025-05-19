@@ -1,89 +1,36 @@
-# vibe-boot
-
-A modern Next.js project template specifically designed for rapid application development through vibe coding. This template serves as a foundation for creating multiple applications with consistent architecture, best practices, and performance optimizations. By using this template, you can quickly bootstrap new projects while maintaining high standards in code quality, SEO, and user experience.
-
-## Features
-
-- 🚀 Next.js 14 with App Router
-- 💎 TypeScript for type safety
-- 🎨 Tailwind CSS for styling
-- 🔍 SEO optimized
-- 📱 Responsive design
-- ⚡ Server-side rendering
-- 🎯 Performance focused
-
-## Tech Stack
-
-- **Framework**: Next.js 14
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Deployment**: Vercel
-- **State Management**: React Context API / Zustand
-- **Form Handling**: React Hook Form
-- **API Integration**: SWR / React Query
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-### Prerequisites
+First, run the development server:
 
-- Node.js 18.17 or later
-- npm or yarn
-
-### Installation
-
-1. Clone the repository
-```bash
-git clone https://github.com/justin-fnx/vibe-boot.git
-cd vibe-boot
-```
-
-2. Install dependencies
-```bash
-npm install
-# or
-yarn install
-```
-
-3. Run the development server
 ```bash
 npm run dev
 # or
 yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Project Structure
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-```
-src/
-├── app/                 # App Router pages and layouts
-├── components/         # Reusable UI components
-│   ├── ui/            # Basic UI components
-│   └── features/      # Feature-specific components
-├── lib/               # Utility functions and shared logic
-├── hooks/             # Custom React hooks
-├── types/             # TypeScript type definitions
-├── styles/            # Global styles and Tailwind config
-└── api/               # API routes (if needed)
-```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Development
+## Learn More
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-- `npm run test` - Run tests
+To learn more about Next.js, take a look at the following resources:
 
-## Contributing
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## License
+## Deploy on Vercel
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

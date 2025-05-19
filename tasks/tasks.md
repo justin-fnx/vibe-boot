@@ -3,10 +3,10 @@
 ## 현재 스프린트
 
 ### 설정 작업
-- [ ] TypeScript로 Next.js 프로젝트 초기화
-  - [ ] create-next-app으로 새 프로젝트 생성
-  - [ ] TypeScript 설정 구성
-  - [ ] ESLint와 Prettier 설정
+- [x] TypeScript로 Next.js 프로젝트 초기화
+  - [x] create-next-app으로 새 프로젝트 생성
+  - [x] TypeScript 설정 구성
+  - [x] ESLint와 Prettier 설정
 
 - [ ] Tailwind CSS 구성
   - [ ] Tailwind CSS 설치 및 구성

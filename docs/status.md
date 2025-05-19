@@ -3,10 +3,10 @@
 ## 완료된 기능
 - ✅ 프로젝트 초기화 및 문서화
 - ✅ Git 설정 및 원격 저장소 구성
+- ✅ Next.js + TypeScript 초기화
 
 ## 진행 중
 - 🏗️ 프로젝트 구조 설정
-  - ⏳ Next.js + TypeScript 초기화
   - ⏳ Tailwind CSS 설정
 
 ## 대기 중
