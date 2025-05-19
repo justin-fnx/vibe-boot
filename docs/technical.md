@@ -6,10 +6,11 @@
 
 ## 기술 스택
 
-- **프론트엔드 프레임워크**: Next.js 14
+- **프론트엔드 프레임워크**: Next.js 14.1.0
 - **언어**: TypeScript
 - **배포 플랫폼**: Vercel
 - **스타일링**: Tailwind CSS
+- **폰트**: Inter (Google Fonts)
 - **상태 관리**: React Context API / Zustand (필요시)
 - **폼 처리**: React Hook Form
 - **API 통합**: SWR / React Query

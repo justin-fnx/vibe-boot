@@ -8,10 +8,10 @@
   - [x] TypeScript 설정 구성
   - [x] ESLint와 Prettier 설정
 
-- [ ] Tailwind CSS 구성
-  - [ ] Tailwind CSS 설치 및 구성
-  - [ ] 기본 색상 구성 설정
-  - [ ] 유틸리티 클래스 생성
+- [x] Tailwind CSS 구성
+  - [x] Tailwind CSS 설치 및 구성
+  - [x] 기본 색상 구성 설정
+  - [x] 유틸리티 클래스 생성
 
 ### 개발 작업
 - [ ] 기본 페이지 구조 생성
@@ -45,4 +45,5 @@
 ## 완료된 작업
 - [x] Git 저장소 초기화
 - [x] 프로젝트 문서화 설정
-- [x] 개발 환경 구성 
+- [x] 개발 환경 구성
+- [x] 기본 폰트 설정 (Inter) 
