@@ -1,48 +1,48 @@
-# Project Tasks
+# 프로젝트 작업
 
-## Current Sprint
+## 현재 스프린트
 
-### Setup Tasks
-- [ ] Initialize Next.js project with TypeScript
-  - [ ] Create new project using create-next-app
-  - [ ] Configure TypeScript settings
-  - [ ] Set up ESLint and Prettier
+### 설정 작업
+- [ ] TypeScript로 Next.js 프로젝트 초기화
+  - [ ] create-next-app으로 새 프로젝트 생성
+  - [ ] TypeScript 설정 구성
+  - [ ] ESLint와 Prettier 설정
 
-- [ ] Configure Tailwind CSS
-  - [ ] Install and configure Tailwind CSS
-  - [ ] Set up basic color scheme
-  - [ ] Create utility classes
+- [ ] Tailwind CSS 구성
+  - [ ] Tailwind CSS 설치 및 구성
+  - [ ] 기본 색상 구성 설정
+  - [ ] 유틸리티 클래스 생성
 
-### Development Tasks
-- [ ] Create basic page structure
-  - [ ] Design and implement layout
-  - [ ] Create main page components
-  - [ ] Set up routing
+### 개발 작업
+- [ ] 기본 페이지 구조 생성
+  - [ ] 레이아웃 설계 및 구현
+  - [ ] 메인 페이지 컴포넌트 생성
+  - [ ] 라우팅 설정
 
-- [ ] Implement SEO features
-  - [ ] Add meta tags
-  - [ ] Generate sitemap
-  - [ ] Configure robots.txt
+- [ ] SEO 기능 구현
+  - [ ] 메타 태그 추가
+  - [ ] 사이트맵 생성
+  - [ ] robots.txt 구성
 
-## Backlog
+## 백로그
 
-### Frontend Development
-- [ ] Design and implement UI components
-- [ ] Create responsive layouts
-- [ ] Implement dark mode
-- [ ] Add loading states
+### 프론트엔드 개발
+- [ ] UI 컴포넌트 설계 및 구현
+- [ ] 반응형 레이아웃 생성
+- [ ] 다크 모드 구현
+- [ ] 로딩 상태 추가
 
-### Performance
-- [ ] Optimize images
-- [ ] Implement code splitting
-- [ ] Set up caching strategy
+### 성능
+- [ ] 이미지 최적화
+- [ ] 코드 분할 구현
+- [ ] 캐싱 전략 설정
 
-### Testing
-- [ ] Set up testing environment
-- [ ] Write unit tests
-- [ ] Add E2E tests
+### 테스트
+- [ ] 테스트 환경 설정
+- [ ] 단위 테스트 작성
+- [ ] E2E 테스트 추가
 
-## Completed Tasks
-- [x] Initialize Git repository
-- [x] Set up project documentation
-- [x] Configure development environment 
+## 완료된 작업
+- [x] Git 저장소 초기화
+- [x] 프로젝트 문서화 설정
+- [x] 개발 환경 구성 

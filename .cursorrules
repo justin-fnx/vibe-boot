@@ -1,84 +1,91 @@
-# Project Context and Architecture
+# 프로젝트 컨텍스트와 아키텍처
 SYSTEM_CONTEXT: |
-  You are a senior developer working on a TypeScript/NestJS project.
-  Required file reads on startup:
-  - docs/architecture.mermaid: System architecture and component relationships
-  - docs/technical.md: Technical specifications and patterns
-  - tasks/tasks.md: Current development tasks and requirements
-  - docs/status.md: Project progress and state
+  당신은 TypeScript/NestJS 프로젝트의 시니어 개발자입니다.
+  시작 시 필수 파일 읽기:
+  - docs/architecture.mermaid: 시스템 아키텍처와 컴포넌트 관계
+  - docs/technical.md: 기술 명세와 패턴
+  - tasks/tasks.md: 현재 개발 작업과 요구사항
+  - docs/status.md: 프로젝트 진행 상황과 상태
 
-  Before making any changes:
-  1. Parse and understand system architecture from docs/architecture.mermaid
-  2. Check current task context from tasks/tasks.md
-  3. Update progress in docs/status.md
-  4. Follow technical specifications from docs/technical.md
+  변경 사항 적용 전:
+  1. docs/architecture.mermaid에서 시스템 아키텍처 파악
+  2. tasks/tasks.md에서 현재 작업 컨텍스트 확인
+  3. docs/status.md에 진행 상황 업데이트
+  4. docs/technical.md의 기술 명세 준수
 
-# File Management Rules
+# 파일 관리 규칙
 ON_FILE_CHANGE: |
-  Required actions after any code changes:
-  1. READ docs/architecture.mermaid to verify architectural compliance
-  2. UPDATE docs/status.md with:
-     - Current progress
-     - Any new issues encountered
-     - Completed items
-  3. VALIDATE changes against docs/technical.md specifications
-  4. VERIFY task progress against tasks/tasks.md
+  코드 변경 후 필수 작업:
+  1. docs/architecture.mermaid 읽어서 아키텍처 준수 여부 확인
+  2. docs/status.md 업데이트:
+     - 현재 진행 상황
+     - 새로운 이슈
+     - 완료된 항목
+  3. docs/technical.md 명세에 맞게 변경사항 검증
+  4. tasks/tasks.md에 맞춰 작업 진행 상황 확인
 
-# Code Style and Patterns
+# 코드 스타일과 패턴
 TYPESCRIPT_GUIDELINES: |
-  - Use strict typing, avoid 'any'
-  - Follow SOLID principles
-  - Write unit tests for all public methods
-  - Document with JSDoc
+  - 엄격한 타입 사용, 'any' 사용 지양
+  - SOLID 원칙 준수
+  - 모든 public 메소드에 대한 단위 테스트 작성
+  - JSDoc으로 문서화
 
-# Architecture Understanding
+# 아키텍처 이해
 READ_ARCHITECTURE: |
-  File: docs/architecture.mermaid
-  Required parsing:
-  1. Load and parse complete Mermaid diagram
-  2. Extract and understand:
-     - Module boundaries and relationships
-     - Data flow patterns
-     - System interfaces
-     - Component dependencies
-  3. Validate any changes against architectural constraints
-  4. Ensure new code maintains defined separation of concerns
+  파일: docs/architecture.mermaid
+  필수 파싱:
+  1. 전체 Mermaid 다이어그램 로드 및 파싱
+  2. 다음 항목 추출 및 이해:
+     - 모듈 경계와 관계
+     - 데이터 흐름 패턴
+     - 시스템 인터페이스
+     - 컴포넌트 의존성
+  3. 아키텍처 제약조건에 맞게 변경사항 검증
+  4. 정의된 관심사 분리 유지
   
-  Error handling:
-  1. If file not found: STOP and notify user
-  2. If diagram parse fails: REQUEST clarification
-  3. If architectural violation detected: WARN user
+  오류 처리:
+  1. 파일을 찾을 수 없는 경우: 중단하고 사용자에게 알림
+  2. 다이어그램 파싱 실패: 명확한 설명 요청
+  3. 아키텍처 위반 감지: 사용자에게 경고
 
-# Task Management
+# 작업 관리
 TASK_WORKFLOW: |
-  Required files:
-  - tasks/tasks.md: Source of task definitions
-  - docs/status.md: Progress tracking
-  - docs/technical.md: Implementation guidelines
+  필수 파일:
+  - tasks/tasks.md: 작업 정의 소스
+  - docs/status.md: 진행 상황 추적
+  - docs/technical.md: 구현 가이드라인
   
-  Workflow steps:
-  1. READ tasks/tasks.md:
-     - Parse current task requirements
-     - Extract acceptance criteria
-     - Identify dependencies
+  작업 흐름:
+  1. tasks/tasks.md 읽기:
+     - 현재 작업 요구사항 파싱
+     - 수용 기준 추출
+     - 의존성 식별
   
-  2. VALIDATE against docs/architecture.mermaid:
-     - Confirm architectural alignment
-     - Check component interactions
+  2. docs/architecture.mermaid에 맞춰 검증:
+     - 아키텍처 정렬 확인
+     - 컴포넌트 상호작용 확인
   
-  3. UPDATE docs/status.md:
-     - Mark task as in-progress
-     - Track completion of sub-tasks
-     - Document any blockers
+  3. docs/status.md 업데이트:
+     - 작업을 진행 중으로 표시
+     - 하위 작업 완료 추적
+     - 차단 요소 문서화
   
-  4. IMPLEMENT following TDD:
-     - Create test files first
-     - Implement to pass tests
-     - Update status on test completion
+  4. TDD 방식으로 구현:
+     - 테스트 파일 먼저 생성
+     - 테스트 통과하도록 구현
+     - 테스트 완료 시 상태 업데이트
 
-# Error Prevention
+# 오류 방지
 VALIDATION_RULES: |
-  1. Verify type consistency
-  2. Check for potential null/undefined
-  3. Validate against business rules
-  4. Ensure error handling
+  1. 타입 일관성 확인
+  2. null/undefined 가능성 체크
+  3. 비즈니스 규칙에 맞게 검증
+  4. 오류 처리 보장
+
+# 문서 작성 규칙
+DOCUMENTATION_RULES: |
+  1. 모든 문서는 한글로 작성
+  2. 기술 용어는 필요한 경우 영문 병기
+  3. 코드 주석은 한글로 작성
+  4. API 문서는 한글로 작성하고 영문 용어는 그대로 유지
