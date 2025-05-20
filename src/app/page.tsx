@@ -7,12 +7,7 @@ export const metadata: Metadata = {
   description: 'Next.js 서버 사이드 렌더링 메인 페이지',
 }
 
-export default async function Home() {
-  // 서버 사이드에서 데이터를 가져오는 예시
-  const data = await fetch('https://api.example.com/data', {
-    next: { revalidate: 3600 } // 1시간마다 재검증
-  }).then(res => res.json())
-
+export default function Home() {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-6">서버 사이드 렌더링 예제</h1>
@@ -20,6 +15,15 @@ export default async function Home() {
         <p className="text-gray-700">
           이 페이지는 서버 사이드에서 렌더링됩니다.
         </p>
+        <div className="mt-4">
+          <h2 className="text-2xl font-semibold mb-4">주요 기능</h2>
+          <ul className="list-disc list-inside space-y-2">
+            <li>서버 사이드 렌더링 (SSR)</li>
+            <li>Google Analytics 통합</li>
+            <li>Google AdSense 통합</li>
+            <li>반응형 디자인</li>
+          </ul>
+        </div>
       </div>
     </div>
   )

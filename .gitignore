@@ -73,3 +73,6 @@ out/
 *.temp
 .temp/
 .tmp/
+
+# Husky
+.husky/ 

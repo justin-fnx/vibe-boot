@@ -6,7 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install",
+    "check-docs": "node scripts/check-docs.js"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "npm run check-docs"
+    ],
+    "*.{md,mdx}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "next": "14.1.0",
@@ -20,6 +32,8 @@
     "autoprefixer": "^10.4.21",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"

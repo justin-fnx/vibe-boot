@@ -44,4 +44,7 @@ yarn-error.log*
 
 # Git
 .git/
-.gitignore 
+.gitignore
+
+# Husky
+.husky/ 

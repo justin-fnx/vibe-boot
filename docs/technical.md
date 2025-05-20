@@ -17,6 +17,8 @@
 - **인증**: NextAuth.js (필요시)
 - **데이터베이스**: Vercel Postgres / MongoDB Atlas (필요시)
 - **SEO 도구**: next-seo, next-sitemap
+- **분석 도구**: Google Analytics 4
+- **광고 플랫폼**: Google AdSense
 
 ## 아키텍처 원칙
 
@@ -44,6 +46,9 @@ src/
 │   ├── ui/            # 기본 UI 컴포넌트
 │   ├── features/      # 기능별 컴포넌트
 │   ├── ads/          # 광고 관련 컴포넌트
+│   │   └── AdSense.tsx # Google AdSense 컴포넌트
+│   ├── analytics/     # 분석 관련 컴포넌트
+│   │   └── GoogleAnalytics.tsx # Google Analytics 컴포넌트
 │   └── layout/       # 레이아웃 관련 컴포넌트
 ├── lib/               # 유틸리티 함수와 공유 로직
 │   ├── seo/          # SEO 관련 유틸리티
@@ -51,7 +56,8 @@ src/
 │   └── server-utils.ts # 서버 사이드 유틸리티
 ├── hooks/             # 커스텀 React 훅
 ├── types/             # TypeScript 타입 정의
-│   └── next.d.ts     # Next.js 타입 정의
+│   ├── next.d.ts     # Next.js 타입 정의
+│   └── next-env.d.ts # 환경 변수 타입 정의
 ├── styles/            # 전역 스타일과 Tailwind 설정
 └── api/               # API 라우트 (필요시)
 ```
@@ -187,4 +193,41 @@ src/
 - 컴포넌트 props 문서화
 - API 문서 최신 상태 유지
 - SEO 전략 및 구현 문서화
-- SEO 문서 유지 
+- SEO 문서 유지
+
+## 분석 및 광고 통합
+
+### 1. Google Analytics 4
+- 페이지 뷰 자동 추적
+- URL 변경 시 자동 업데이트
+- 검색 파라미터 포함 추적
+- 성능 최적화를 위한 지연 로딩
+- TypeScript 타입 안전성 보장
+
+### 2. Google AdSense
+- 반응형 광고 지원
+- 다양한 광고 포맷 지원
+- 클라이언트 사이드 렌더링
+- 에러 처리 및 로깅
+- 환경 변수를 통한 설정 관리
+
+### 3. 환경 변수 설정
+```
+# Google Analytics
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+
+# Google AdSense
+NEXT_PUBLIC_ADSENSE_CLIENT_ID=ca-pub-XXXXXXXXXXXXXXXX
+```
+
+### 4. 성능 최적화
+- 분석 스크립트 지연 로딩
+- 광고 로딩 최적화
+- 페이지 로드 시간 최소화
+- 사용자 경험 우선
+
+### 5. 개인정보 보호
+- 쿠키 동의 관리
+- 개인정보 수집 최소화
+- GDPR 준수
+- CCPA 준수 
