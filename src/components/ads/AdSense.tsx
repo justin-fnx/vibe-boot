@@ -1,11 +1,12 @@
 'use client';
 
+import Script from 'next/script';
 import { useEffect } from 'react';
 
 interface AdSenseProps {
   slot: string;
   style?: React.CSSProperties;
-  format?: 'auto' | 'fluid' | 'rectangle' | 'vertical';
+  format?: string;
   responsive?: boolean;
 }
 
@@ -25,13 +26,21 @@ export default function AdSense({ slot, style, format = 'auto', responsive = tru
   }, []);
 
   return (
-    <ins
-      className="adsbygoogle"
-      style={style}
-      data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
-      data-ad-slot={slot}
-      data-ad-format={format}
-      data-full-width-responsive={responsive}
-    />
+    <>
+      <Script
+        async
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID}`}
+        strategy="afterInteractive"
+        crossOrigin="anonymous"
+      />
+      <ins
+        className="adsbygoogle"
+        style={style}
+        data-ad-client={process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID}
+        data-ad-slot={slot}
+        data-ad-format={format}
+        data-full-width-responsive={responsive}
+      />
+    </>
   );
 } 

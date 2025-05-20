@@ -37,14 +37,21 @@
 ```
 src/
 ├── app/                 # App Router 페이지와 레이아웃
+│   ├── layout.tsx      # 루트 레이아웃
+│   ├── page.tsx        # 메인 페이지
+│   └── globals.css     # 전역 스타일
 ├── components/         # 재사용 가능한 UI 컴포넌트
 │   ├── ui/            # 기본 UI 컴포넌트
-│   └── features/      # 기능별 컴포넌트
+│   ├── features/      # 기능별 컴포넌트
+│   ├── ads/          # 광고 관련 컴포넌트
+│   └── layout/       # 레이아웃 관련 컴포넌트
 ├── lib/               # 유틸리티 함수와 공유 로직
 │   ├── seo/          # SEO 관련 유틸리티
-│   └── metadata/     # 페이지 메타데이터 생성기
+│   ├── metadata/     # 페이지 메타데이터 생성기
+│   └── server-utils.ts # 서버 사이드 유틸리티
 ├── hooks/             # 커스텀 React 훅
 ├── types/             # TypeScript 타입 정의
+│   └── next.d.ts     # Next.js 타입 정의
 ├── styles/            # 전역 스타일과 Tailwind 설정
 └── api/               # API 라우트 (필요시)
 ```
