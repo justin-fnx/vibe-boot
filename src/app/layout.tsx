@@ -12,14 +12,16 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Vibe Boot",
-  description: "Vibe Boot - Next.js Application",
+  description: "Next.js 서버 사이드 렌더링 애플리케이션",
+  viewport: "width=device-width, initial-scale=1",
+  robots: "index, follow",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="ko" className="h-full">
       <head>
